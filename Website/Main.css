@@ -1,0 +1,35 @@
+body{
+    background-image: url('Images/mainpage.jpg');
+    background-color: aqua;
+    background-blend-mode: multiply;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.on-start-custom-animation{
+    text-decoration-color: aqua;
+    background-image: url("Logos/Codeberg.png");
+}
+
+.logo-custom-css {
+    height: 44px;
+    position: relative;
+    bottom: -14px;
+}
+
+.logo-custom-css:hover {
+    filter: invert(100%);
+}
+
+.audio-custom-css {
+    size: 480px;
+    background-image: url("Images/yle-archives-xadDmwzZOkM-unsplash.jpg");
+    background-position: center;
+    background-clip: content-box;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: burlywood;
+    background-blend-mode: multiply;
+}
+
