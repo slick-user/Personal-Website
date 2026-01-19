@@ -1,0 +1,15 @@
+@import 'tailwindcss';
+
+@theme { 
+  --color-sunPaleYellow: #F8D67A;
+  --color-horizon1: #FA5C5C;
+  --color-horizon2: #FD8A6B;
+  --color-horizon3: #FEC288;
+  --color-horizon4: #FBEF76;
+
+  --color-wallsMaroon: #DC143C;
+  --color-wallsRed: #FF0000;
+  --color-wallsOrange: #FF4500;
+  --color-wallsYellow1: #FFA500;
+  --color-wallsYellow2: #FFD700; 
+}

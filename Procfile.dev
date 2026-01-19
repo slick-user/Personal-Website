@@ -1,0 +1,6 @@
+# Note: This Procfile.dev works best on Unix/Mac systems
+# For Windows, use start-dev.ps1 or start-dev.bat instead
+web: cd backend && bundle exec rails server -p 3001
+css: cd backend && bundle exec rails tailwindcss:watch
+frontend: cd frontend && npm run dev
+
