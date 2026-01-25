@@ -3,9 +3,11 @@ import SocialLinks from './SocialLinks';
 import SkillsSection from './SkillsSection';
 import Education from './Education';
 import ProjectsSection from './ProjectsSection'
+import Certifications from './Certifications';
 
 import Spinner from './common/Spinner';
-import Error from './common/Error'
+import Problem from './common/Error'
+import CursorGlow from './common/cursor' 
 
 function Portfolio() {
   const [data, setData] = useState(null);
@@ -42,7 +44,7 @@ function Portfolio() {
     return (
       // my Error component does not seem to be working
       <div className="min-h-screen flex items-center justify-center">
-        <Error error={error}/> 
+        <Problem error={error}/> 
         <div className="text-xl text-red-600">Error: {error}</div>
       </div>
     );
@@ -64,10 +66,15 @@ function Portfolio() {
         <p className="text-lg text-horizon1 max-w-2xl mx-auto mb-8">{data.bio}</p>
         <SocialLinks links={data.social_links}/>
       </header>
+ 
+      <CursorGlow
+        defaultImage={"/public/popCat.png"}
+        hoverImage={"/public/popcatopen.png"}
+      />
 
-      {/* Education Section */}
-      <div className="px-4">
-        <Education education={data.education} />
+      {/* Projects Section */}
+      <div className='px-4'>
+        <ProjectsSection projects={data.projects} />
       </div>
 
       {/* Skills Section */}
@@ -75,9 +82,14 @@ function Portfolio() {
         <SkillsSection skills={data.skills} />
       </div>
 
-      {/* Projects Section */}
+      {/* Education Section */}
+      <div className="px-4">
+        <Education education={data.education} />
+      </div>
+      
+      {/* Certifications Section */}
       <div className='px-4'>
-        <ProjectsSection projects={data.projects} />
+        <Certifications certifications={data.certifications} />
       </div>
 
       {/* Footer */}

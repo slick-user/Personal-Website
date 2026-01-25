@@ -6,7 +6,7 @@ function SkillsSection({ skills }) {
       </h2>
 
       <div className="grid lg:grid-cols-2 gap-8 mt-6">
-        {/* LEFT SIDE */}
+        {/* SKILLS SECTION */}
         <div className="space-y-6">
           <div className="p-6 rounded-lg top-24">
             <h3 className="text-2xl font-bold mb-4 text-center"> 
@@ -37,7 +37,7 @@ function SkillsSection({ skills }) {
             ))}
         </div>
 
-        {/* RIGHT SIDE */}
+        {/* TECHNOLOGIES SECTION */}
         <div className="space-y-6">
           <div className="p-6 rounded-lg sticky top-24">
             <h3 className="text-2xl font-bold mb-4 text-center">
